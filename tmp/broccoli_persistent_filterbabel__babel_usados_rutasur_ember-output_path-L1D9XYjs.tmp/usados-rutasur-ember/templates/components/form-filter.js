@@ -1,0 +1,8 @@
+define("usados-rutasur-ember/templates/components/form-filter", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "mU9Tyi3s", "block": "{\"symbols\":[\"&default\"],\"statements\":[[0,\"este es el form\\n\"],[6,\"div\"],[9,\"class\",\"sorting__inner\"],[7],[0,\"\\n    \"],[6,\"div\"],[9,\"class\",\"sorting__item\"],[7],[0,\"\\n        \"],[6,\"span\"],[9,\"class\",\"sorting__title\"],[7],[0,\"Categoria\"],[8],[0,\"\\n        \"],[6,\"div\"],[9,\"class\",\"select jelect\"],[7],[0,\"\\n            \"],[6,\"select\"],[7],[6,\"option\"],[7],[0,\"Camiones\"],[8],[8],[0,\"\\n        \"],[8],[0,\"\\n    \"],[8],[0,\"\\n    \"],[6,\"div\"],[9,\"class\",\"sorting__item\"],[7],[0,\"\\n        \"],[6,\"span\"],[9,\"class\",\"sorting__title\"],[7],[0,\"Marca\"],[8],[0,\"\\n        \"],[6,\"div\"],[9,\"class\",\"select jelect\"],[7],[0,\"\\n            \"],[6,\"select\"],[7],[6,\"option\"],[7],[0,\"Volvo\"],[8],[8],[0,\"\\n        \"],[8],[0,\"\\n    \"],[8],[0,\"\\n    \"],[6,\"div\"],[9,\"class\",\"sorting__item\"],[7],[0,\"\\n        \"],[6,\"input\"],[9,\"type\",\"hidden\"],[9,\"id\",\"sort-purpose\"],[9,\"name\",\"purpose\"],[9,\"value\",\"\"],[7],[8],[0,\"\\n    \"],[8],[0,\"\\n\"],[8],[0,\"\\n\\n\"],[11,1],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "usados-rutasur-ember/templates/components/form-filter.hbs" } });
+});

@@ -1,0 +1,1 @@
+/Users/bravoedu/Documents/webs/usados-rutasur-ember/tmp/broccoli_merge_trees-input_base_path-WyPuJRMt.tmp/2/usados-rutasur-ember/tests/app.lint-test.js
