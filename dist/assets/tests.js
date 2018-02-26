@@ -30,6 +30,11 @@ define('usados-rutasur-ember/tests/app.lint-test', [], function () {
     assert.ok(true, 'components/marca-single.js should pass ESLint\n\n');
   });
 
+  QUnit.test('components/menu-usados.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'components/menu-usados.js should pass ESLint\n\n');
+  });
+
   QUnit.test('components/unidad-single.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'components/unidad-single.js should pass ESLint\n\n');
@@ -47,12 +52,12 @@ define('usados-rutasur-ember/tests/app.lint-test', [], function () {
 
   QUnit.test('routes/agencias.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/agencias.js should pass ESLint\n\n5:9 - \'Ember\' is not defined. (no-undef)\n6:17 - \'transition\' is defined but never used. (no-unused-vars)\n7:7 - Unexpected console statement. (no-console)');
+    assert.ok(false, 'routes/agencias.js should pass ESLint\n\n5:9 - Use import { inject } from \'@ember/service\'; instead of using Ember.inject.service (ember/new-module-imports)\n5:9 - \'Ember\' is not defined. (no-undef)\n6:17 - \'transition\' is defined but never used. (no-unused-vars)\n7:7 - Unexpected console statement. (no-console)');
   });
 
   QUnit.test('routes/categorias.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'routes/categorias.js should pass ESLint\n\n5:9 - \'Ember\' is not defined. (no-undef)\n6:17 - \'transition\' is defined but never used. (no-unused-vars)\n7:7 - Unexpected console statement. (no-console)');
+    assert.ok(false, 'routes/categorias.js should pass ESLint\n\n5:9 - Use import { inject } from \'@ember/service\'; instead of using Ember.inject.service (ember/new-module-imports)\n5:9 - \'Ember\' is not defined. (no-undef)\n6:17 - \'transition\' is defined but never used. (no-unused-vars)\n7:7 - Unexpected console statement. (no-console)');
   });
 
   QUnit.test('routes/listado.js', function (assert) {
@@ -262,6 +267,35 @@ define('usados-rutasur-ember/tests/integration/components/marca-single-test', ['
     assert.equal(this.$().text().trim(), 'template block text');
   });
 });
+define('usados-rutasur-ember/tests/integration/components/menu-usados-test', ['ember-qunit'], function (_emberQunit) {
+  'use strict';
+
+  (0, _emberQunit.moduleForComponent)('menu-usados', 'Integration | Component | menu usados', {
+    integration: true
+  });
+
+  (0, _emberQunit.test)('it renders', function (assert) {
+    // Set any properties with this.set('myProperty', 'value');
+    // Handle any actions with this.on('myAction', function(val) { ... });
+
+    this.render(Ember.HTMLBars.template({
+      "id": "d21FWSs2",
+      "block": "{\"symbols\":[],\"statements\":[[1,[18,\"menu-usados\"],false]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), '');
+
+    // Template block usage:
+    this.render(Ember.HTMLBars.template({
+      "id": "/Db357/c",
+      "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[4,\"menu-usados\",null,null,{\"statements\":[[0,\"      template block text\\n\"]],\"parameters\":[]},null],[0,\"  \"]],\"hasEval\":false}",
+      "meta": {}
+    }));
+
+    assert.equal(this.$().text().trim(), 'template block text');
+  });
+});
 define('usados-rutasur-ember/tests/integration/components/unidad-single-test', ['ember-qunit'], function (_emberQunit) {
   'use strict';
 
@@ -340,6 +374,11 @@ define('usados-rutasur-ember/tests/tests.lint-test', [], function () {
   QUnit.test('integration/components/marca-single-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'integration/components/marca-single-test.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('integration/components/menu-usados-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'integration/components/menu-usados-test.js should pass ESLint\n\n');
   });
 
   QUnit.test('integration/components/unidad-single-test.js', function (assert) {
